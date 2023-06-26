@@ -53,6 +53,7 @@ module atp_tb();
     end 
 endmodule
 //bio-metrics scanner to undergo as barcode scanner is under process
+//Will be developed soon with bar code scanner......
 module test;
     wire check;
     reg [0:7]auth;
@@ -95,7 +96,7 @@ endmodule
     clk = ~clk;#5clk = ~clk;
     #30
     
-    //withdraw too much money, resulting in an error
+   
     amount = 2500;
 	display bill amount = `payment method';
     clk = ~clk;#5clk = ~clk;
