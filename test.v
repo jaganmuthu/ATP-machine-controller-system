@@ -148,10 +148,10 @@ endmodule
     pin = 4'b0110;
     #30
 
- 
-    display bill amount = 'CHARGES';
-    clk = ~clk;#5clk = ~clk;
-    #30;
+   	display bill number = 'CHARGES';
+   clk = ~clk;#5clk = ~clk;
+   #30
+  
     
   end
   
