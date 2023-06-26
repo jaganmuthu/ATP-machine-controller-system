@@ -85,7 +85,6 @@ endmodule
     
     #30
     
-    //withdraw some money and then show the balance
     amount = 100;
 	display bill amount = `balance';
     clk = ~clk;#5clk = ~clk;
@@ -118,20 +117,19 @@ endmodule
       input wire = cheque/dd;
     
 
-    //the balance wont change because an error happened during withdrawal
+   
 	display bill amount  = `BALANCE;
     clk = ~clk;#5clk = ~clk;
     #30
 
 
-    //transfer some money to the destination account with number 2816
+
     amount = 50;
     destinationconsumer number = 2816;
 	display bill amount = `TRANSACTION;
     clk = ~clk;#5clk = ~clk;
     #30
 
-    //transfer too much money to the destination account with number 2816 which exceeds 2047 and cuases an error
     amount = 2550;
     destinationconsumer number = 2816;
 	display bill amount = `TRANSACTION;
@@ -145,12 +143,12 @@ endmodule
     exit = 0;
     #30
     
-    //log in using the account with number 2816
+ 
     customer number = 12'd2816;
     pin = 4'b0110;
     #30
 
-    //you'll see that the balance is more than the default value because we had trasnsferred some money to this account a while ago
+ 
     display bill amount = 'CHARGES';
     clk = ~clk;#5clk = ~clk;
     #30;
